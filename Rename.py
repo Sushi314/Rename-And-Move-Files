@@ -72,7 +72,6 @@ if other_formats:
         print(f"Moved {file_path} to {destination_path}")
 
 def copy_files_to_inputed_directory(move_directory):
-    global main_directory  # Access the global main_directory variable
     for root, dirs, files in os.walk(main_directory):
         for directory in dirs:
             source_dir = os.path.join(root, directory)
